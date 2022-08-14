@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-Dom-js</title>
+</head>
+<body>
+    <h1>Dom er special event</h1>
+    <button onclick="console.log(45)">CLick Me</button>
+    <button title="This is a tool tip" onclick="console.log(8)">Click Here</button>
+    <br>
+    <button onclick="makeRed()">Make Red</button>
+    <button ondblclick="makeTomato()">Make Me Tomato</button>
+    <button id="make-blue">Make Blue</button>
+    <button id="make-purple">Make Me purple</button>
+    <button id="make-pink">Pink Button</button>
+    <button id="make-green">Make Green</button>
+    <button id="golden-rod">Make Golden Rod</button>
+    <script src="js/event.js"></script>
+    <script>
+      document.getElementById("golden-rod").addEventListener("click", function(){
+        document.body.style.backgroundColor= "goldenrod"
+      });
+    </script>
+</body>
+</html>
